@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #1b1b32;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  background: #ffffff;
+  color: #1b1b32;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+#search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#search-input {
+  width: 80%;
+  max-width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #1b1b32;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#search-button {
+  width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  background: #BDB5D5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#search-button:hover {
+  background: #AA98A9;
+}
+
+.output {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.name-and-id {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.size {
+  font-size: 1rem;
+  color: #555;
+}
+
+.sprite-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sprite-container img {
+  width: 120px;
+}
+
+#types {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.normal { background-color: #a8a77a; }
+.fire { background-color: #ee8130; }
+.water { background-color: #6390f0; }
+.electric { background-color: #f7d02c; }
+.grass { background-color: #7ac74c; }
+.ice { background-color: #96d9d6; }
+.fighting { background-color: #c22e28; }
+.poison { background-color: #a33ea1; }
+.ground { background-color: #e2bf65; }
+.flying { background-color: #a98ff3; }
+.psychic { background-color: #f95587; }
+.bug { background-color: #a6b91a; }
+.rock { background-color: #b6a136; }
+.ghost { background-color: #735797; }
+.dragon { background-color: #6f35fc; }
+.dark { background-color: #705746; }
+.steel { background-color: #b7b7ce; }
+.fairy { background-color: #d685ad; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #BDB5D5;
+  color: #1b1b32;
+  font-size: 1rem;
+}
+
+td {
+  background-color: #e6e6e6;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+}
